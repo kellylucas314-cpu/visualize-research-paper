@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light of Detection — Ultraweak Photon Emissions &amp; Cancer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Floating navigation dots -->
+  <nav id="nav-dots" aria-label="Section navigation">
+    <a href="#hero" class="dot active" data-section="hero" aria-label="Introduction"></a>
+    <a href="#premise" class="dot" data-section="premise" aria-label="The Premise"></a>
+    <a href="#method" class="dot" data-section="method" aria-label="Methods"></a>
+    <a href="#invitro" class="dot" data-section="invitro" aria-label="In Vitro Results"></a>
+    <a href="#spectral" class="dot" data-section="spectral" aria-label="Spectral Analysis"></a>
+    <a href="#invivo" class="dot" data-section="invivo" aria-label="In Vivo Results"></a>
+    <a href="#signature" class="dot" data-section="signature" aria-label="The 20 Hz Signature"></a>
+    <a href="#implications" class="dot" data-section="implications" aria-label="Implications"></a>
+    <a href="#citation" class="dot" data-section="citation" aria-label="Citation"></a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="section hero">
+    <canvas id="photon-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Cancers 2020, 12, 1001</p>
+      <h1>Every living cell<br><em>emits light.</em></h1>
+      <p class="hero-sub">What if that faint glow could reveal cancer before any other test?</p>
+      <div class="scroll-cue">
+        <span>Scroll to explore</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREMISE ===== -->
+  <section id="premise" class="section">
+    <div class="container narrow">
+      <span class="section-label">The Premise</span>
+      <h2>Cells whisper in photons</h2>
+      <p class="lead">Nearly a century ago, Alexander Gurwitsch observed that living cells emit <strong>ultraweak photon emissions (UPE)</strong> — vanishingly faint flickers of light produced by the biochemical reactions that power life.</p>
+      <div class="card-row">
+        <div class="card fade-up">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="20" fill="none" stroke="var(--accent)" stroke-width="2"/><circle cx="24" cy="24" r="8" fill="var(--accent)" opacity="0.3"/><circle cx="24" cy="24" r="3" fill="var(--accent)"/></svg>
+          </div>
+          <h3>10<sup>−11</sup> W/m²</h3>
+          <p>Power flux density of photon emissions from melanoma cells — far below human vision, but measurable with photomultiplier tubes.</p>
+        </div>
+        <div class="card fade-up" style="animation-delay:0.15s">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" width="48" height="48"><rect x="8" y="14" width="32" height="20" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/><path d="M16 20v8M24 18v12M32 22v6" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>100 seconds</h3>
+          <p>That's all the measurement time needed. A brief photon recording can reveal the spectral fingerprint of malignancy.</p>
+        </div>
+        <div class="card fade-up" style="animation-delay:0.3s">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" width="48" height="48"><path d="M24 4l4 8 9 1-7 6 2 9-8-4-8 4 2-9-7-6 9-1z" fill="none" stroke="var(--accent)" stroke-width="2"/></svg>
+          </div>
+          <h3>90% Accuracy</h3>
+          <p>Spectral Power Density analysis of photon emissions discriminated malignant from non-malignant cells with up to 90% accuracy.</p>
+        </div>
+      </div>
+      <blockquote class="pull-quote fade-up">
+        "Photons are the bases of changes of energies across electron orbits in the atomic and molecular reactions that drive living systems."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== METHOD ===== -->
+  <section id="method" class="section section-dark">
+    <div class="container">
+      <span class="section-label">The Experiment</span>
+      <h2>How do you listen to light?</h2>
+      <div class="method-grid">
+        <div class="method-step fade-up">
+          <div class="step-number">01</div>
+          <h3>Cell Cultures</h3>
+          <p>13 cell lines — human pancreatic, breast, cervical, kidney, and mouse melanoma — both malignant and non-malignant, each cultured to ~1 million cells.</p>
+        </div>
+        <div class="method-step fade-up" style="animation-delay:0.1s">
+          <div class="step-number">02</div>
+          <h3>Photomultiplier Detection</h3>
+          <p>Plates placed over digital PMT apertures inside light-tight black boxes. Photons counted every 20 ms (50 Hz sampling) for 100 seconds.</p>
+        </div>
+        <div class="method-step fade-up" style="animation-delay:0.2s">
+          <div class="step-number">03</div>
+          <h3>Mouse Model</h3>
+          <p>47 C57 male mice: half injected with B16-BL6 melanoma cells, controls received UV-killed cells or no injection. Whole-body photons measured over 21 days.</p>
+        </div>
+        <div class="method-step fade-up" style="animation-delay:0.3s">
+          <div class="step-number">04</div>
+          <h3>Spectral Analysis</h3>
+          <p>Fast Fourier Transform converts raw photon counts into Spectral Power Density profiles (0.01–25 Hz), revealing hidden temporal patterns.</p>
+        </div>
+      </div>
+      <!-- Experiment design diagram -->
+      <div class="experiment-diagram fade-up">
+        <h3>In Vivo Experimental Design</h3>
+        <div class="diagram-row">
+          <div class="diagram-group tumor">
+            <div class="mouse-icon">🐁</div>
+            <div class="injection-label">B16-BL6 melanoma<br>cells injected</div>
+            <div class="outcome">Palpable tumors<br>by day 19</div>
+            <span class="group-tag">Tumor Group (n=23)</span>
+          </div>
+          <div class="diagram-group uv">
+            <div class="mouse-icon">🐁</div>
+            <div class="injection-label">UV-killed B16-BL6<br>cells injected</div>
+            <div class="outcome">No tumor<br>growth</div>
+            <span class="group-tag">UV Control (n=8)</span>
+          </div>
+          <div class="diagram-group control">
+            <div class="mouse-icon">🐁</div>
+            <div class="injection-label">No<br>injection</div>
+            <div class="outcome">No tumor<br>growth</div>
+            <span class="group-tag">Control (n=16)</span>
+          </div>
+        </div>
+        <div class="timeline-bar">
+          <span>Day 1</span><span>Day 7</span><span>Day 10</span><span>Day 13</span><span>Day 19–21</span>
+        </div>
+        <p class="diagram-caption">Photon emissions measured at each timepoint using digital photomultiplier tubes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IN VITRO RESULTS ===== -->
+  <section id="invitro" class="section">
+    <div class="container">
+      <span class="section-label">In Vitro Results</span>
+      <h2>Cancer cells glow brighter</h2>
+      <p class="lead">Across both photomultiplier tubes, malignant cells consistently emitted more photons per second than their non-malignant counterparts (p < 0.05).</p>
+      <div class="chart-container fade-up">
+        <div class="chart-header">
+          <h3>Photon Emissions: Malignant vs. Non-Malignant Cells</h3>
+          <p class="chart-subtitle">PMT 2 (lower dark counts) — photons per second</p>
+        </div>
+        <div class="bar-chart" id="cell-chart">
+          <!-- Bars generated by JS -->
+        </div>
+        <div class="chart-legend">
+          <span class="legend-item"><span class="legend-swatch healthy"></span>Non-malignant</span>
+          <span class="legend-item"><span class="legend-swatch malignant"></span>Malignant</span>
+        </div>
+      </div>
+
+      <!-- Comparison bar chart -->
+      <div class="comparison-chart fade-up">
+        <h3>Average Photon Count Comparison</h3>
+        <p class="chart-subtitle">Malignant cells emit significantly more photons (p &lt; 0.05)</p>
+        <div class="comparison-bars">
+          <div class="comp-row">
+            <span class="comp-label">Non-Malignant</span>
+            <div class="comp-bar-track">
+              <div class="comp-bar healthy" data-value="80" style="--target-width: 36%">
+                <span class="comp-value">~80 photons/s</span>
+              </div>
+            </div>
+          </div>
+          <div class="comp-row">
+            <span class="comp-label">Malignant</span>
+            <div class="comp-bar-track">
+              <div class="comp-bar malignant" data-value="220" style="--target-width: 100%">
+                <span class="comp-value">~125 photons/s</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stat-badge">p < 0.05 &nbsp;|&nbsp; η² = 0.026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECTRAL ANALYSIS ===== -->
+  <section id="spectral" class="section section-dark">
+    <div class="container">
+      <span class="section-label">Spectral Analysis</span>
+      <h2>The hidden pattern in the flicker</h2>
+      <p class="lead">Raw photon counts tell part of the story. But when you transform the <em>temporal pattern</em> of those emissions into a frequency spectrum, a dramatic signature emerges.</p>
+
+      <div class="spectral-viz fade-up">
+        <h3>Spectral Power Density — Pancreatic Cell Lines</h3>
+        <p class="chart-subtitle">Malignant vs. non-malignant cells across frequency bands</p>
+        <canvas id="spd-chart" width="900" height="400"></canvas>
+        <div class="chart-legend">
+          <span class="legend-item"><span class="legend-swatch healthy"></span>Non-malignant (HBL 100)</span>
+          <span class="legend-item"><span class="legend-swatch malignant"></span>Malignant (Pancreatic)</span>
+        </div>
+      </div>
+
+      <div class="key-frequencies fade-up">
+        <h3>Critical Frequency Bands</h3>
+        <div class="freq-grid">
+          <div class="freq-item down">
+            <span class="freq-value">0.2 Hz</span>
+            <span class="freq-dir">↓ Lower in malignant</span>
+          </div>
+          <div class="freq-item up">
+            <span class="freq-value">7.6 Hz</span>
+            <span class="freq-dir">↑ Higher in malignant</span>
+          </div>
+          <div class="freq-item down">
+            <span class="freq-value">12 Hz</span>
+            <span class="freq-dir">↓ Lower in malignant</span>
+          </div>
+          <div class="freq-item up highlight">
+            <span class="freq-value">19.7 Hz</span>
+            <span class="freq-dir">↑ Higher in malignant</span>
+          </div>
+          <div class="freq-item down">
+            <span class="freq-value">23.8 Hz</span>
+            <span class="freq-dir">↓ Lower in malignant</span>
+          </div>
+        </div>
+        <p class="accuracy-callout">These 5 frequency bands alone achieve <strong>83% discriminant accuracy</strong> for pancreatic cell classification (p &lt; 0.001)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IN VIVO RESULTS ===== -->
+  <section id="invivo" class="section">
+    <div class="container">
+      <span class="section-label">In Vivo Results</span>
+      <h2>Detection within 24 hours</h2>
+      <p class="lead">The photon emission profiles of mice injected with melanoma cells diverged from controls as early as <strong>one day</strong> post-injection — long before any tumor was palpable.</p>
+
+      <div class="timeline-chart fade-up">
+        <h3>Mouse Photon Emissions Over Time</h3>
+        <p class="chart-subtitle">Photon counts per second by group and days post-injection</p>
+        <canvas id="mouse-chart" width="900" height="420"></canvas>
+        <div class="chart-legend">
+          <span class="legend-item"><span class="legend-swatch control"></span>Control (no injection)</span>
+          <span class="legend-item"><span class="legend-swatch malignant"></span>Tumor (B16-BL6)</span>
+          <span class="legend-item"><span class="legend-swatch uv"></span>UV-killed cells</span>
+        </div>
+      </div>
+
+      <div class="finding-cards fade-up">
+        <div class="finding">
+          <div class="finding-day">Day 1</div>
+          <p>Both injected groups show ~300 more photons/s than controls. The body responds immediately to injected cells.</p>
+        </div>
+        <div class="finding">
+          <div class="finding-day">Day 7</div>
+          <p>Photon emissions drop below control levels in both injected groups — a shift potentially reflecting rapid proliferation dynamics.</p>
+        </div>
+        <div class="finding">
+          <div class="finding-day">Day 13</div>
+          <p>Emissions normalize across groups. The UV-killed group rebounds while the tumor group remains suppressed.</p>
+        </div>
+        <div class="finding">
+          <div class="finding-day">Day 19</div>
+          <p>Fully developed tumors show elevated SPD at ~22 Hz — the malignancy signature emerges in the spectral domain.</p>
+        </div>
+      </div>
+
+      <div class="mouse-presence fade-up">
+        <h3>Signal Confirmation: Mouse Presence Detection</h3>
+        <div class="presence-bars">
+          <div class="presence-item">
+            <div class="presence-label">Empty box</div>
+            <div class="presence-bar-track">
+              <div class="presence-bar empty" style="--w:20%"></div>
+            </div>
+            <span class="presence-val">~15 photons/s</span>
+          </div>
+          <div class="presence-item">
+            <div class="presence-label">Mouse present</div>
+            <div class="presence-bar-track">
+              <div class="presence-bar present" style="--w:85%"></div>
+            </div>
+            <span class="presence-val">~500 photons/s</span>
+          </div>
+        </div>
+        <p class="stat-badge">F(1,53) = 19.65, p ≤ 0.001, η² = 0.27</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THE 20 HZ SIGNATURE ===== -->
+  <section id="signature" class="section section-accent">
+    <div class="container narrow">
+      <span class="section-label">The Discovery</span>
+      <h2>The ~20 Hz signature</h2>
+      <div class="signature-viz fade-up">
+        <canvas id="signature-wave"></canvas>
+      </div>
+      <p class="lead">Across both cell cultures and tumor-bearing mice, one frequency band stood out: <strong>~20–22 Hz</strong>. This spectral power peak appeared consistently in malignant conditions.</p>
+      <div class="two-col">
+        <div class="col fade-up">
+          <h3>In Cell Cultures</h3>
+          <p>When all malignant cell lines were pooled against all non-malignant lines, <strong>22 Hz</strong> was the only SPD increment that reached statistical significance.</p>
+        </div>
+        <div class="col fade-up">
+          <h3>In Living Mice</h3>
+          <p>Mice with fully developed tumors (day 19) showed significantly higher SPD at <strong>22.6 Hz</strong> vs. controls (p = 0.042, η² = 0.68 — a very large effect).</p>
+        </div>
+      </div>
+      <blockquote class="pull-quote fade-up">
+        "The power output of a radio generating static or a broadcast message is the same. The difference is the pattern of expression."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== IMPLICATIONS ===== -->
+  <section id="implications" class="section">
+    <div class="container narrow">
+      <span class="section-label">Why It Matters</span>
+      <h2>From bench to bedside?</h2>
+      <p class="lead">These findings point toward a future where cancer detection could be as simple as measuring light — non-invasively, quickly, and inexpensively.</p>
+      <div class="implications-grid">
+        <div class="impl-card fade-up">
+          <div class="impl-icon">
+            <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="18" fill="none" stroke="var(--accent)" stroke-width="2"/><path d="M24 12v12l8 8" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Early Detection</h3>
+          <p>Photon emission changes detectable within 24 hours of tumor cell injection — far earlier than physical examination.</p>
+        </div>
+        <div class="impl-card fade-up" style="animation-delay:0.1s">
+          <div class="impl-icon">
+            <svg viewBox="0 0 48 48" width="48" height="48"><path d="M12 36V24l8-12h8l8 12v12" fill="none" stroke="var(--accent)" stroke-width="2"/><path d="M12 36h24" stroke="var(--accent)" stroke-width="2"/></svg>
+          </div>
+          <h3>Non-Invasive</h3>
+          <p>No biopsies, no radiation, no contrast agents. Just a photon detector and 100 seconds of measurement time.</p>
+        </div>
+        <div class="impl-card fade-up" style="animation-delay:0.2s">
+          <div class="impl-icon">
+            <svg viewBox="0 0 48 48" width="48" height="48"><path d="M8 24h8l4-8 4 16 4-12 4 8h8" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Spectral Fingerprinting</h3>
+          <p>Different malignancies show distinct SPD profiles — potentially enabling tumor-type classification, not just detection.</p>
+        </div>
+        <div class="impl-card fade-up" style="animation-delay:0.3s">
+          <div class="impl-icon">
+            <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="18" fill="none" stroke="var(--accent)" stroke-width="2"/><path d="M16 24c0-4.4 3.6-8 8-8M24 8v4M36 24h-4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Therapeutic Link</h3>
+          <p>The ~20 Hz signature aligns with the frequency of weak magnetic fields shown to inhibit cancer cell growth — hinting at a diagnostic-therapeutic bridge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CITATION ===== -->
+  <section id="citation" class="section section-dark">
+    <div class="container narrow">
+      <span class="section-label">The Paper</span>
+      <h2>Read the original research</h2>
+      <div class="citation-card fade-up">
+        <p class="citation-title">Ultraweak Photon Emissions as a Non-Invasive, Early-Malignancy Detection Tool: An In Vitro and In Vivo Study</p>
+        <p class="citation-authors">Nirosha J. Murugan, Michael A. Persinger, Lukasz M. Karbowski &amp; Blake T. Dotta</p>
+        <p class="citation-journal"><em>Cancers</em> 2020, 12, 1001 &nbsp;|&nbsp; doi:10.3390/cancers12041001</p>
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7226102/" class="btn" target="_blank" rel="noopener">View on PubMed Central →</a>
+      </div>
+      <div class="authors-grid fade-up">
+        <div class="author">
+          <strong>Nirosha J. Murugan</strong>
+          <span>Tufts University / Algoma University</span>
+        </div>
+        <div class="author">
+          <strong>Michael A. Persinger</strong>
+          <span>Laurentian University</span>
+        </div>
+        <div class="author">
+          <strong>Lukasz M. Karbowski</strong>
+          <span>Laurentian University</span>
+        </div>
+        <div class="author">
+          <strong>Blake T. Dotta</strong>
+          <span>Laurentian University (Corresponding)</span>
+        </div>
+      </div>
+      <p class="funding-note">Funded by Capital Industries. Published 18 April 2020 under CC BY 4.0.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Interactive visualization of Murugan et al. (2020). Not affiliated with the original authors. Data presented for educational purposes.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
